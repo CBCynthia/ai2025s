@@ -122,7 +122,29 @@
   .toprow {
     margin-top: 36px;
   }
+.image-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+        }
 
+        .image-container img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.5s ease-in-out;
+        }
+  .image-container img.hover-img {
+            opacity: 0;
+        }
+
+  .image-container:hover img.hover-img {
+            opacity: 1;
+        }
+
+  .image-container:hover img.default-img {
+            opacity: 0;
+        }
   .bottomrow {
     margin-bottom: 36px;
   }
@@ -154,7 +176,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的作業比較前面兩次的作業相對簡單，可能是因為前面的作業出現過太多次的error了，所以我在執行本次作業時依舊是感到戰戰兢兢的，很怕它下一秒就跳出什麼錯誤訊息或是告訴我無法執行之類的訊息，但意外的很順利的一次性跑過了，看到成功訊息時真的是鬆了一口氣，但同時在hw2和hw4中又遇到一堆error，所以心中的大石頭還是沒有放下來。
     </div>
   </div>
 
@@ -170,22 +192,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
-          <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
+          <td id='m1'>3</td>
+          <td>Simple baseline - 上傳 1個與lpips和ssim有關的.csv檔</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
-          <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
+          <td id='m2'>3</td>
+          <td>Medium baseline - 能夠在散點圖中呈現結果</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
-          <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
+          <td id='m3'>4</td>
+          <td>Strong baseline - 製造hover效果</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,12 +217,17 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>其他人的"陳"和我的相似度</figcaption>
+            <img src="results.png" width="700px"/>
+        </figure>
     </div>
+  </div>
+  <!-- ------------------------------------------------>
+  <div class="row hw12" align="center">
+    <iframe style="background-color: #fff;" src="hover.html" width="800" height="600" frameborder="0"></iframe>
   </div>
 
   <!-- ------------------------------------------------>
