@@ -170,22 +170,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,13 +195,57 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>ComfyUI+工作流</figcaption>
+        <img src="work.png" width="100%"/>
+        </figure>
     </div>
   </div>
+
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>完成芙莉蓮Checkpoint、LoRA文生圖</figcaption>
+
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/1188071?modelVersionId=1337429'" value="Checkpoint連結">
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/1209474/a4-test?modelVersionId=1373925'" value="LoRA連結">
+
+        
+        1344 * 768
+
+        LoRA Strength : 1.00
+        
+        Positive： masterpiece, best quality, high score, great score, absurdres, pointy ears, 1girl, frieren,sousou no frieren, long hair, flower, head wreath, smile, petals, earrings, jewelry, shirt, elf, blue flower, looking at another, outdoors, green eyes, upper body, long sleeves, striped shirt, striped, sky, solo focus, closed mouth, white hair, falling petals, glowing, <lora:mix-a4-v2:1>
+        Negative： lowres, bad anatomy, bad hands, text, error, missing finger, extra digits, fewer digits, cropped, worst quality, low quality, low score, bad score, average score, signature, watermark, username, blurry,
+    
+        
+        <img src="medium.png" width="100%"/>
+      </figure>
+      </div>
+    </div>
+  <!-- ------------------------------------------------>
+  <div class="row hw12">
+    <div class="col-md-12 twenty">    
+      <figure>
+        <figcaption>完成辛梅爾文生圖</figcaption>
+
+        1344 * 768
+
+        LoRA Strength : 1.00
+        
+        Positive： masterpiece, best quality, ultra-detailed, high-resolution, sousou no frieren,2 people, 1 boy, 1 girl,  frieren (sousou no frieren), girl has long hair, white hair,girl has green eyes, girl has high twin ponytails, short girl, girl has elf ears, red earrings, long earings, detailed face, eye contact, hand on another's head, serene expression, close-up, upper body, fantasy setting, outdoors, himmel (sousou no frieren),boy has blue eyes, boy has light blue hair, boy has short hair, cape, capelet, Japanese anime
+        Negative：lowres, bad anatomy, bad hands, missing fingers, extra digits, fused fingers, cropped, worst quality, low quality, low score, bad score, average score, text, error, signature, watermark, username, blurry, deformed, mutated, distorted, out of frame, jpeg artifacts, ugly, 1 people, white hair boy, blue hair girl, boy has ponytail, boy has green eyes, girl has green eyes, boy has long hair
+
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/1369089/illustrious-xl-20'" value="Checkpoint連結">
+        <input type="button" name="back" onclick="location.href='https://civitai.com/models/1204563/ma1ma1helmes-or-shiiros-styles-or-niji'" value="LoRA連結1">
+        <img src="modelchange.png" width="100%"/>
+      </figure>
+      </div>
+    </div>
+
 
   <!-- ------------------------------------------------>
 
